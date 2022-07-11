@@ -12,6 +12,7 @@ class Index extends Component {
                     <li><Link href="/login">Login</Link></li>
                 </ul>
                <h1>This is Home Page</h1>
+                <img src="images/mithunbanerjee.jpg"/>
             </div>
         );
     }
