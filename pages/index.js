@@ -48,6 +48,8 @@ class Index extends Component {
                 </ul>
                <h1 className={style.text}>This is Home Page</h1>
                 <img src="images/mithunbanerjee.jpg"/>
+
+                <button className="btn btn-primary">My button</button>
             </div>
         );
     }
