@@ -7,7 +7,7 @@ class Contact extends Component {
         return (
             <div>
                 <Head>
-                    <title>Home</title>
+                    <title>Contact</title>
 
                     <meta charSet="UTF-8"/>
                     <meta name="description" content="ঘরে বসে স্কিল ডেভেলপ করুন নিজের সময় মত । সঠিক দিকনির্দেশনা সহ থাকছে প্রোগ্রামিং এবং সফটওয়্যার ডেভেলপমেন্ট এর উপরে প্রফেশনাল কোর্স "/>

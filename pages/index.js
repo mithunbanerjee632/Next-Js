@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Link from "next/link";
 import Head from "next/head";
-
+import style from "../css/style.module.css";
 class Index extends Component {
     render() {
         return (
@@ -46,7 +46,7 @@ class Index extends Component {
                     <li><Link href="/about">About</Link></li>
                     <li><Link href="/login">Login</Link></li>
                 </ul>
-               <h1>This is Home Page</h1>
+               <h1 className={style.text}>This is Home Page</h1>
                 <img src="images/mithunbanerjee.jpg"/>
             </div>
         );
