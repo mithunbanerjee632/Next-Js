@@ -16,7 +16,13 @@ import Menu from "./Menu";
 //
 // }
 
-
+export async function getStaticProps(){
+    return {
+        props:{
+            API_KEY:process.env.API_KEY
+        }
+    }
+}
 
 
 
@@ -26,7 +32,7 @@ class Index extends Component {
     render() {
         return (
             <div>
-                {this.props.countryList}
+
                 <Head>
                     <title>Home</title>
 
@@ -60,6 +66,7 @@ class Index extends Component {
 
               <Menu/>
                <h1 className={style.text}>This is Home Page</h1>
+                <h1>API KEY:{this.props.API_KEY}</h1>
                 <img src="images/mithunbanerjee.jpg"/>
 
                 <button className="btn btn-primary">My button</button>
