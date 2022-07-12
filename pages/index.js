@@ -4,7 +4,7 @@ import Head from "next/head";
 import style from "../css/style.module.css";
 
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
     const res = await fetch('https://restcountries.com/v3.1/all');
     const json = await res.json();
 
