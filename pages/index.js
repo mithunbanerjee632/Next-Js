@@ -2,10 +2,30 @@ import React, {Component} from 'react';
 import Link from "next/link";
 import Head from "next/head";
 import style from "../css/style.module.css";
+
+
+export async function getStaticProps(){
+    const res = await fetch('https://restcountries.com/v3.1/all');
+    const json = await res.json();
+
+    return{
+        props:{countryList:JSON.stringify(json)}
+    }
+
+
+}
+
+
+
+
+
+
+
 class Index extends Component {
     render() {
         return (
             <div>
+                {this.props.countryList}
                 <Head>
                     <title>Home</title>
 
