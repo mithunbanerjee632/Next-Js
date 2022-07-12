@@ -2,18 +2,19 @@ import React, {Component} from 'react';
 import Link from "next/link";
 import Head from "next/head";
 import style from "../css/style.module.css";
+import Menu from "./Menu";
 
 
-export async function getServerSideProps(){
-    const res = await fetch('https://restcountries.com/v3.1/all');
-    const json = await res.json();
-
-    return{
-        props:{countryList:JSON.stringify(json)}
-    }
-
-
-}
+// export async function getServerSideProps(){
+//     const res = await fetch('https://restcountries.com/v3.1/all');
+//     const json = await res.json();
+//
+//     return{
+//         props:{countryList:JSON.stringify(json)}
+//     }
+//
+//
+// }
 
 
 
@@ -57,15 +58,7 @@ class Index extends Component {
                 </Head>
 
 
-
-
-
-                <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/login">Login</Link></li>
-                </ul>
+              <Menu/>
                <h1 className={style.text}>This is Home Page</h1>
                 <img src="images/mithunbanerjee.jpg"/>
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Link from "next/link";
 import Head from "next/head";
+import Menu from "./Menu";
 
 class Contact extends Component {
     render() {
@@ -36,12 +37,7 @@ class Contact extends Component {
 
                 </Head>
 
-                <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/login">Login</Link></li>
-                </ul>
+                <Menu/>
                 <h1>This is Contact Page</h1>
             </div>
         );
