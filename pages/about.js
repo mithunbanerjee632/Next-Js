@@ -4,6 +4,13 @@ import Head from "next/head";
 import Menu from "./Menu";
 
 class About extends Component {
+    static  getInitialProps({query}){
+        return {query}
+    }
+
+
+
+
     render() {
         return (
             <div>
@@ -38,7 +45,7 @@ class About extends Component {
                 </Head>
 
                 <Menu/>
-                <h1>This is About Page</h1>
+                <h1>This is About Page {JSON.stringify(this.props.query)}</h1>
             </div>
         );
     }

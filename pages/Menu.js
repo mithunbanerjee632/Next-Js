@@ -11,7 +11,7 @@ class Menu extends Component {
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
-                    <li><Link href="/about">About</Link></li>
+                    <li><Link href={{pathname:"/about",query:{firstName:"mithun",lastName:"banerjee"}}}>About</Link></li>
                     <li><Link href="/login">Login</Link></li>
                 </ul>
             </div>
